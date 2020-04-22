@@ -13,3 +13,13 @@ let's do it
 [链表[第三天#issues/3]](https://github.com/LIUeng/alogrithm-ci/issues/3)
 
 - [链表[第三天代码]](https://github.com/LIUeng/alogrithm-ci/blob/master/%233.js)
+
+[栈](./%235.md)
+
+[队列](./%236.md)
+
+[递归](./%237.md)
+
+[冒泡/插入/选择](./%238.md)
+
+- [冒泡/插入/选择排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%238.js)
