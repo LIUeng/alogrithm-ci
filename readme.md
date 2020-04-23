@@ -23,3 +23,7 @@ let's do it
 [冒泡/插入/选择排序](./%238.md)
 
 -   [冒泡/插入/选择排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%238.js)
+
+[归并/快速排序](./%239.md)
+
+-   [归并/快速排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%239.js)

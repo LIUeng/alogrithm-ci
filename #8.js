@@ -92,7 +92,7 @@ console.log('插入排序结果为：', insertionSort([3, 2, 4, 5, 6, 1], 6));
 /**
  * 选择排序
  * 从小到大
- * 每次招到最小值
+ * 每次找到最小值
  */
 function chooseSort(arr, n) {
     for(let i = 0; i < n; i++) {
