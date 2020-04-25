@@ -27,3 +27,11 @@ let's do it
 [归并/快速排序](./%239.md)
 
 -   [归并/快速排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%239.js)
+
+[桶/计数/基数排序](./%2310.md)
+
+-   [桶/计数/基数排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%2310.js)
+
+[二分查找](./%2311.md)
+
+-   [二分查找代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%2311.js)

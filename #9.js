@@ -46,6 +46,8 @@ console.log("归并排序结果为：", mergeSort([4, 2, 6, 7, 8, 8, 3, 1, 5]));
 // 原地排序算法
 function quickSort(arr, left, right) {
     if (left < right) {
+        // 三数取中法
+        // let pivot = (left + right) >> 1;
         let pivot = right;
         let partitionIndex = partition(arr, pivot, left, right);
         quickSort(
@@ -64,6 +66,14 @@ function quickSort(arr, left, right) {
     return arr;
 }
 
+// 快速排序 找出第K大元素
+// JavaScript
+function finkK(arr, k) {
+    if(arr == null || arr.length < k) return -1;
+    let partitionIndex = partition(arr, 0, arr.length);
+    while()
+}
+
 // 数据交换
 const swap = (arr, i, j) => {
     const temp = arr[i];
@@ -72,9 +82,11 @@ const swap = (arr, i, j) => {
 };
 
 // 分区
+let count = 0;
 function partition(arr, pivot, left, right) {
     const pivotVal = arr[pivot];
     let startIndex = left;
+    debugger;
     for (let i = left; i < right; i++) {
         if (arr[i] < pivotVal) {
             swap(arr, i, startIndex);
@@ -82,6 +94,8 @@ function partition(arr, pivot, left, right) {
         }
     }
     swap(arr, startIndex, pivot);
+    console.log(arr);
+    count++;
     return startIndex;
 }
 
@@ -91,25 +105,31 @@ function partition(arr, pivot, left, right) {
 // pivot = 1, left = 0, right = 1, pivotVal = 1, startIndex = 0 交换 1 2 3
 
 // result
+// console.log(
+//     "快速原地排序结果为：",
+//     quickSort([2, 1, 3, 4, 5, 6, 7, 5, 3, 23, 34, 6565], 0, 11)
+// );
 console.log(
     "快速原地排序结果为：",
-    quickSort([2, 1, 3], 0, 2)
+    quickSort([8, 10, 2, 3, 6, 1, 1, 5, 5], 0, 8),
+    "count: ",
+    count
 );
 
 // 快速排序
 // 非原地排序算法
 // 从小到大
 function quickSortII(arr) {
-    if(arr.length <= 1) return arr;
+    if (arr.length <= 1) return arr;
     let leftA = [];
     let rightA = [];
     let pivotElment = arr.shift();
     let centerA = [pivotElment];
-    while(arr.length) {
+    while (arr.length) {
         let curElement = arr.shift();
-        if(curElement < pivotElment) {
-            leftA.push(curElement)
-        } else if(curElement === pivotElment) {
+        if (curElement < pivotElment) {
+            leftA.push(curElement);
+        } else if (curElement === pivotElment) {
             centerA.push(curElement);
         } else {
             rightA.push(curElement);
@@ -122,4 +142,7 @@ function quickSortII(arr) {
 }
 
 // result
-console.log('快速排序算法结果为：', quickSortII([2, 1, 3]));
+console.log(
+    "快速排序算法结果为：",
+    quickSortII([2, 1, 3, 4, 5, 6, 7, 5, 3, 23, 34, 6565])
+);
