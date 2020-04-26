@@ -66,14 +66,6 @@ function quickSort(arr, left, right) {
     return arr;
 }
 
-// 快速排序 找出第K大元素
-// JavaScript
-function finkK(arr, k) {
-    if(arr == null || arr.length < k) return -1;
-    let partitionIndex = partition(arr, 0, arr.length);
-    while()
-}
-
 // 数据交换
 const swap = (arr, i, j) => {
     const temp = arr[i];
@@ -86,7 +78,6 @@ let count = 0;
 function partition(arr, pivot, left, right) {
     const pivotVal = arr[pivot];
     let startIndex = left;
-    debugger;
     for (let i = left; i < right; i++) {
         if (arr[i] < pivotVal) {
             swap(arr, i, startIndex);
@@ -94,10 +85,41 @@ function partition(arr, pivot, left, right) {
         }
     }
     swap(arr, startIndex, pivot);
-    console.log(arr);
     count++;
     return startIndex;
 }
+
+// 快速排序 找出第K大元素
+// 分区
+function partitionK(arr, left, right) {
+    let pivot = arr[right];
+    let index = left;
+    for(let i = left; i < right; i++) {
+        if(arr[i] <= pivot) {
+            swap(arr, i, index);
+            index++
+        }
+    }
+    swap(arr, index, right);
+    return index;
+}
+
+// 查找
+function findK(arr, k) {
+    if(arr == null || arr.length < k) return -1;
+    let partitionIndex = partitionK(arr, 0, arr.length - 1);
+    while(partitionIndex + 1 != k) {
+        if(partitionIndex + 1 < k) {
+            partitionIndex = partitionK(arr, partitionIndex + 1, arr.length - 1)
+        } else {
+            partitionIndex = partitionK(arr, 0, partitionIndex - 1);
+        }
+    }
+    return arr[partitionIndex];
+}
+
+// result
+console.log('快速排序第K大元素为：', findK([5, 4, 2, 1, 1], 5));
 
 // 代码分析
 // left
