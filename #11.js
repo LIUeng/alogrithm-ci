@@ -42,8 +42,8 @@ console.log('二分查找递归实现结果为：', binarySearchRecursive([1, 3,
 // 1. 查找第一个值等于给定值
 function binarySearchVariant1(arr, n, value) {
     let low = 0, high = n - 1;
-    let mid = low + ((high - low) >> 1);
     while(low <= high) {
+        let mid = low + ((high - low) >> 1);
         if(arr[mid] == value) {
             if(mid == 0 || arr[mid - 1] != value) {
                 return mid;
@@ -61,8 +61,8 @@ function binarySearchVariant1(arr, n, value) {
 // 2. 查找最后一个值等于给定值
 function binarySearchVariant2(arr, n, value) {
     let low = 0, high = n - 1;
-    let mid = low + ((high - low) >> 1);
     while(low <= high) {
+        let mid = low + ((high - low) >> 1);
         if(arr[mid] == value) {
             if(mid == 0 || arr[mid + 1] != value) {
                 return mid;
@@ -80,8 +80,8 @@ function binarySearchVariant2(arr, n, value) {
 // 3. 查找第一个大于等于给定值
 function binarySearchVariant3(arr, n, value) {
     let low = 0, high = n - 1;
-    let mid = low + ((high - low) >> 1);
     while(low <= high) {
+        let mid = low + ((high - low) >> 1);
         if(arr[mid] >= value) {
             if(mid == 0 || arr[mid - 1] < value) {
                 return mid;
@@ -97,8 +97,8 @@ function binarySearchVariant3(arr, n, value) {
 // 4. 查找最后一个小于等于给定值
 function binarySearchVariant3(arr, n, value) {
     let low = 0, high = n - 1;
-    let mid = low + ((high - low) >> 1);
     while(low <= high) {
+        let mid = low + ((high - low) >> 1);
         if(arr[mid] <= value) {
             if(mid == n - 1 || arr[mid + 1] > value) {
                 return mid;

@@ -35,3 +35,5 @@ let's do it
 [二分查找](./%2311.md)
 
 -   [二分查找代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%2311.js)
+
+[散列表](./%2312.md)
