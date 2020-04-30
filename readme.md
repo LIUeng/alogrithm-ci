@@ -37,3 +37,9 @@ let's do it
 -   [二分查找代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%2311.js)
 
 [散列表](./%2312.md)
+
+-   [散列表代码](./%2312.js)
+
+[二叉树](./%2313.md)
+
+-   [二叉树代码](./%2313.js)
