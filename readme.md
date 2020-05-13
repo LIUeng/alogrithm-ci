@@ -12,7 +12,7 @@ let's do it
 
 [链表](https://github.com/LIUeng/alogrithm-ci/issues/3)
 
--   [链表代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%233.js)
+- [链表代码](./%233.js)
 
 [栈](./%235.md)
 
@@ -22,32 +22,46 @@ let's do it
 
 [冒泡/插入/选择排序](./%238.md)
 
--   [冒泡/插入/选择排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%238.js)
+- [冒泡/插入/选择排序代码](./%238.js)
 
 [归并/快速排序](./%239.md)
 
--   [归并/快速排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%239.js)
+- [归并/快速排序代码](./%239.js)
 
 [桶/计数/基数排序](./%2310.md)
 
--   [桶/计数/基数排序代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%2310.js)
+- [桶/计数/基数排序代码](./%2310.js)
 
 [二分查找](./%2311.md)
 
--   [二分查找代码](https://github.com/LIUeng/alogrithm-ci/blob/master/%2311.js)
+- [二分查找代码](./%2311.js)
 
 [散列表](./%2312.md)
 
--   [散列表代码](./%2312.js)
+- [散列表代码](./%2312.js)
 
 [二叉树](./%2313.md)
 
--   [二叉树代码](./%2313.js)
+- [二叉树代码](./%2313.js)
 
 [堆](./%2314.md)
 
--   [堆代码](./%2314.js)
+- [堆代码](./%2314.js)
 
-[BF&RK匹配字符串算法](./%2315.md)
+[BF&RK 匹配字符串算法](./%2315.md)
 
--   [匹配字符串算法代码](./%2314.js)
+- [匹配字符串算法代码](./%2315.js)
+
+[Trie 树](./%2316.md)
+
+- [Trie 树代码](./%2316.js)
+
+[图](./%2317.md)
+
+[深度广度优先搜索算法](./%2318.md)
+
+- [深度广度优先搜索算法代码](./%2318.js)
+
+[分冶算法](./%2319.md)
+
+- [分冶算法代码](./%2319.j's)
